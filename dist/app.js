@@ -6,11 +6,11 @@ _dotenv2.default.config();
 require('./database');
 
 var _express = require('express'); var _express2 = _interopRequireDefault(_express);
-var _homeRouter = require('./routes/homeRouter'); var _homeRouter2 = _interopRequireDefault(_homeRouter);
-var _userRouter = require('./routes/userRouter'); var _userRouter2 = _interopRequireDefault(_userRouter);
-var _tokenRouter = require('./routes/tokenRouter'); var _tokenRouter2 = _interopRequireDefault(_tokenRouter);
-var _alunoRouter = require('./routes/alunoRouter'); var _alunoRouter2 = _interopRequireDefault(_alunoRouter);
-var _fotoRouter = require('./routes/fotoRouter '); var _fotoRouter2 = _interopRequireDefault(_fotoRouter);
+var _homeRouterjs = require('./routes/homeRouter.js'); var _homeRouterjs2 = _interopRequireDefault(_homeRouterjs);
+var _userRouterjs = require('./routes/userRouter.js'); var _userRouterjs2 = _interopRequireDefault(_userRouterjs);
+var _tokenRouterjs = require('./routes/tokenRouter.js'); var _tokenRouterjs2 = _interopRequireDefault(_tokenRouterjs);
+var _alunoRouterjs = require('./routes/alunoRouter.js'); var _alunoRouterjs2 = _interopRequireDefault(_alunoRouterjs);
+var _fotoRouterjs = require('./routes/fotoRouter .js'); var _fotoRouterjs2 = _interopRequireDefault(_fotoRouterjs);
 
 class App {
   constructor() {
@@ -26,11 +26,11 @@ class App {
   }
 
   routes() {
-    this.app.use('/', _homeRouter2.default);
-    this.app.use('/users/', _userRouter2.default);
-    this.app.use('/tokens/', _tokenRouter2.default);
-    this.app.use('/alunos/', _alunoRouter2.default);
-    this.app.use('/fotos/', _fotoRouter2.default);
+    this.app.use('/', _homeRouterjs2.default);
+    this.app.use('/users/', _userRouterjs2.default);
+    this.app.use('/tokens/', _tokenRouterjs2.default);
+    this.app.use('/alunos/', _alunoRouterjs2.default);
+    this.app.use('/fotos/', _fotoRouterjs2.default);
   }
 }
 

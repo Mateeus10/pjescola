@@ -6,11 +6,11 @@ dotenv.config();
 import './database';
 
 import express from 'express';
-import homeRoutes from './routes/homeRouter';
-import userRoutes from './routes/userRouter';
-import tokenRoutes from './routes/tokenRouter';
-import alunoRoutes from './routes/alunoRouter';
-import fotoRoutes from './routes/fotoRouter ';
+import homeRoutes from './routes/homeRouter.js';
+import userRoutes from './routes/userRouter.js';
+import tokenRoutes from './routes/tokenRouter.js';
+import alunoRoutes from './routes/alunoRouter.js';
+import fotoRoutes from './routes/fotoRouter .js';
 
 class App {
   constructor() {

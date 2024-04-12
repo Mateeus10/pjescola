@@ -1,15 +1,15 @@
 "use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _express = require('express');
-var _UserController = require('../controllers/UserController'); var _UserController2 = _interopRequireDefault(_UserController);
+var _UserControllerjs = require('../controllers/UserController.js'); var _UserControllerjs2 = _interopRequireDefault(_UserControllerjs);
 
-var _loginRequired = require('../middlewares/loginRequired'); var _loginRequired2 = _interopRequireDefault(_loginRequired);
+var _loginRequiredjs = require('../middlewares/loginRequired.js'); var _loginRequiredjs2 = _interopRequireDefault(_loginRequiredjs);
 
 const router = new (0, _express.Router)();
 
-router.get('/', _UserController2.default.index);
-router.get('/:id', _UserController2.default.show);
+router.get('/', _UserControllerjs2.default.index);
+router.get('/:id', _UserControllerjs2.default.show);
 
-router.post('/', _loginRequired2.default, _UserController2.default.store);
-router.put('/', _loginRequired2.default, _UserController2.default.update);
-router.delete('/', _loginRequired2.default, _UserController2.default.delete);
+router.post('/', _loginRequiredjs2.default, _UserControllerjs2.default.store);
+router.put('/', _loginRequiredjs2.default, _UserControllerjs2.default.update);
+router.delete('/', _loginRequiredjs2.default, _UserControllerjs2.default.delete);
 
 exports. default = router;
